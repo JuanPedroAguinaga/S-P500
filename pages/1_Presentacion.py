@@ -7,8 +7,8 @@ import streamlit as st
 from utils.kpis import calc_volatility, calc_agr, calculate_cumulative_return
 # from utils.
 
-st.markdown('<h4 align="center">Análisis de inversión en el mercado bursátil - Proyecto Individual 3 de Data Analytics del Bootcamp Data Science en Soy Henry</h4>', unsafe_allow_html=True)
-st.markdown('**Descripción del problema**')
+st.markdown('<h4 align="center">Análisis de inversión - Proyecto Individual de Data Analytics del Bootcamp Data Science "Soy Henry"</h4>', unsafe_allow_html=True)
+
 
 st.markdown("En este proyecto simulamos una situación en donde una empresa busca invertir en el mercado bursátil y nos solicita analizarlo en detalle. Como expertos en datos, estamos en capacidad de brindar una explicación de lo que ha sucedido en este mercado en los últimos 23 años (considerando impactos positivos y negativos a partir del año 2000), recomendaciones de inversión y otra información complementaria. El foco del análisis es variado y amplio, pero nos limitamos a las empresas pertenecientes al índice SP500 (Standard & Poor's 500 Index).")
 
@@ -40,37 +40,10 @@ with col3:
     kpi3_value = calculate_cumulative_return(df, F'{period_time}')
     st.metric(label=f"Rendimiento acumulado", value=str(round(kpi3_value * 100, 2)) + " %")
 
-# Mostrar la imagen con personalización
+# Mostrar la imagen personalizada
 st.image('assets/treplot_sp500.png')
 
 
 
-# Información personal
-st.markdown("""<p align="left"><b>Acerca del proyecto:</b></p>""",unsafe_allow_html=True)
-st.markdown("""
-<style>
-    p {
-        padding-top: 0;
-        margin: 0;
-    }
-    p < b {
-        padding-bottom: 0;
-        margin: 0;
-    }
-    a {
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: none;
-    }
-    
-    .icon {
-    transition: transform 0.5s;
-    }
 
-    .icon:hover {
-    transform: scale(1.5);
-    }
-""", unsafe_allow_html=True)
 
-st.write('<p align="center">Puedes revisar el repositorio de este proyecto <a href="https://github.com/royquillca/pida_henry">Proyecto Individual de Data Analytics (PIDA)</a>. Así mismo, te invito a que revises mis proyectos personales accediendo a mi <a href="https://royquillca.github.io/portafolio/">Portafolio</a></p>', unsafe_allow_html=True)
