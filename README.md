@@ -39,3 +39,5 @@ Ademas, es importante tener en cuenta que cualquier análisis histórico del S&P
 Es fundamental realizar un análisis cuidadoso y seguir una estrategia de inversión bien fundamentada y diversificada.
 Cabe aclarar que esto no no debe interpretarse en ningún caso como una recomendación de inversión o un asesoramiento financiero, es solo un proyecto educativo
 de analisis de datos.
+
+Link al [dashboard](https://juanpedroaguinaga-s-p500-aap-4urvbg.streamlit.app/) presentado en streamlit.
